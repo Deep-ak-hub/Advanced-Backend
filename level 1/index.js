@@ -7,10 +7,9 @@ const port = process.env.PORT || 5000
 const app = express()
 
 app.get("/", (req,res) => {
-    return res.status(200).json({message: "Hello from docker"})
+    return res.status(200).json({message: "Hello from docker...."})
 })
 
 app.listen(port, () => {
-    console.log("server started");
-    
+    console.log(`server started on port ${port}`);
 })
